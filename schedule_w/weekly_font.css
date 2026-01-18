@@ -1,0 +1,286 @@
+/* font: import ================================================ */
+
+@font-face {
+  font-family: 'FKGroteskSemiMonoTrial-Regular';
+  src: url('../font/FKGroteskSemiMonoTrial-Regular.woff') format('woff');
+  src: url('../font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
+}
+
+
+/* Variable ================================================ */
+
+:root {
+  /* --bg: #ddfffa; */
+  --bg: #e0f8ff;
+}
+
+
+
+/* text: drag color ================================================ */
+
+::selection {
+  color: var(--bg);
+  /* color: #1DDA59; */
+  background: black;
+}
+
+::-moz-selection { 
+  color: var(--bg);
+  /* color: #1DDA59; */
+  background: black;
+}
+
+
+/* text: default ================================================ */
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* .ChannelContents a {
+  color: blue;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+} */
+
+/* .ChannelContents {
+  a::before {
+    content: '–';
+    font-family: FKGroteskSemiMonoTrial-Regular, sans-serif;
+    font-size: 14.4px;
+    margin-right: 4px;
+  }
+} */
+
+
+a:hover {
+  border-bottom: 1.4px solid black;
+  /* color: #ffffff; */
+  /* text-shadow: 0 0px 6px yellow; */
+  text-decoration: none;
+}
+
+p {
+  font-family: FKGroteskSemiMonoTrial-Regular,sans-serif;
+  font-size: 14.4px;
+  letter-spacing: 0.027em;
+  /* margin-block-start: 0.3em;
+  margin-block-end: 0.3em; */
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
+  text-transform: none;
+  color: #000000;
+}
+
+/* p::selection {
+  color: #000000;
+  text-shadow: 0 0px 6px blue;
+  background: #2d2d2d;
+} */
+
+ul {
+  font-family: FKGroteskSemiMonoTrial-Regular,sans-serif;
+  font-size: 14.4px;
+  letter-spacing: 0.027em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
+  text-transform: none;
+  color: #000000;
+  padding-left: 20px;
+  /* padding-left: 35px; */
+}
+
+ul li::before {
+  content: '—';
+  margin-left: -20px;
+  margin-right: 8px;
+}
+
+ul li a::before {
+  content: '–';
+  background: var(--bg);
+  /* background: #1DDA59; */
+  /* margin-left: -20px;
+  margin-right: 8px; */
+  margin-left: -19px;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+li {
+  padding-bottom: 3px;
+}
+
+a > p::selection {
+  color: #ffffff;
+  /* text-shadow: 0 0px 6px yellow; */
+  text-decoration: none;
+}
+
+a > p:hover {
+  border-bottom: 1.4px solid black;
+  /* color: #ffffff; */
+  /* text-shadow: 0 0px 6px yellow; */
+  text-decoration: none;
+}
+
+.BlockInner__Text > p::selection {
+  color: #000000;
+  /* text-shadow: 0 0px 6px blue; */
+  background: gainsboro;
+  /* color: #000000;
+  text-shadow: 0 0px 6px yellow; */
+  text-decoration: none;
+}
+
+
+
+/* Projects ================================================ */
+
+h4 {
+  margin-block-start: 10px;
+  margin-block-end: 4px;
+  /* padding-left: 20px; */
+}
+
+/* h4::before {
+  content: '⌘';
+  margin-left: -22px;
+  margin-right: 6px;
+} */
+
+span.p0 {
+  /* color: black;
+  background: white; */
+}
+
+span.p1 {
+  background: #ffffb1;
+  /* background: yellow; */
+  /* background: #ffffe4; */
+  /* color: black;
+  background: yellow; */
+}
+
+span.p1.due{
+  /* color: black;
+  background: yellow; */
+}
+
+span.p2 {
+  background: #a7ffa2;
+  /* background: #84ff7e; */
+  /* background: #c2ffbf; */
+  /* color: black;
+  background: rgb(69 255 252); */
+}
+
+span.p2.due {
+  /* color: black;
+  background: rgb(69 255 252); */
+}
+
+span.p2 > u {
+  background: transparent;
+  border-bottom: 1.4px solid black;
+  /* border-bottom: 2px dotted black; */
+  /* text-decoration: underline;
+  text-decoration-style: dotted; */
+}
+
+span.p3 {
+  background: #ffe6aa;
+  /* color: black;
+  background: rgb(220 208 255); */
+}
+
+span.p3.due {
+  /* color: black;
+  background: rgb(220 208 255); */
+}
+
+span.p4 {
+  background: #ffe1e1;
+  /* background: #fae2ff; */
+}
+
+span.p5 {
+  background: #c0dfff;
+  /* background: #b7efff; */
+  /* background: #8ef6ff; */
+  /* background: #bcf0ff; */
+}    
+
+span.p6 {
+  background: #f3dbff;
+  /* background: #d2d7ff; */
+}
+
+/* h4.p1::before {
+  content: '➊';
+  margin-left: -20px;
+  margin-right: 8px;
+}
+
+h4.p2::before {
+  content: '➋';
+  margin-left: -20px;
+  margin-right: 8px;
+}
+
+h4.p3::before {
+  content: '❸';
+  margin-left: -20px;
+  margin-right: 8px;
+} */
+
+b {
+  color: black;
+  /* color: #ff65fa; */
+  background: transparent;
+  font-family: 'FKGroteskSemiMonoTrial-Medium';
+  /* display: inline;
+  color: white;
+  background: blue; */
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 1.4px solid black;
+  /* color: blue;
+  font-family: 'FKGroteskSemiMonoTrial-Medium'; */
+  /* display: inline;
+  text-decoration: none;
+  background: white; */
+}
+
+i {
+  display: inline;
+  font-style: normal;
+  color: #ffffff;
+  background: blue;
+  /* background: #ff00ff; */
+}
+
+.bb {
+  display: inline;
+  color: black;
+  background: #ffa0e7;
+}
+
+.fd {
+  display: inline;
+  color: black;
+  background: #adffed;
+}
+
+/* .p1 {
+  display: inline;
+  background: yellow;
+} */

@@ -1,1 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Senior GarDen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta http-equiv="Content-type" content="text/html;charset=UTF-8"> -->
+    <!-- <link rel="shortcut icon" href="favicon.png"> -->
 
+    <!-- css -->
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_detail.css">
+    <link rel="stylesheet" href="index_media.css">
+
+    <!-- script: index_ie.js -->
+    <script type="text/javascript" src="index_ie.js"></script>
+
+    <!-- script: Masonry -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!--  This is for Are.na routing  -->
+    <script src="//unpkg.com/navigo"></script>
+
+    <!-- script: P5js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Menu ================================================================== -->
+    <div class="menu-bg"></div>
+
+    <div class="menu-top-left">
+      <button class="menu-index font-menu" onclick="location.href='index.html'" type="button">
+        SR GD
+      </button>
+      <button id="row2" class="menu-btn font-menu" onclick="menuSyllabus()" type="button">
+        Syllabus
+      </button>
+      <button id="row1" class="menu-btn font-menu" type="button">
+        Schedule
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://docs.google.com/document/d/1zrNCBbGVd7xPs4_IApp1fIEMM6ssqteynVVGvB38V5E/edit?usp=sharing', '_blank');" type="button">
+        Projects
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://docs.google.com/document/d/1O9fI5bR5-P_m92rSQLm3fWdx7ur1XJz1ou6LIP8zDkE/edit?usp=sharing', '_blank');" type="button">
+        Sign-up
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://calendly.com/lee-halim/30min', '_blank');" type="button">
+        Office Hours
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://seniorthesisspring26.slack.com', '_blank');" type="button">
+        Slack
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://drive.google.com/drive/folders/1Ay6-m4UsLeK2rpzdCHI1eWwr3aUi9M2F?usp=drive_link', '_blank');" type="button">
+        G-Drive
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://www.are.na/bu-senior-gd_spring/bu-senior-gd_spring-collaborative-archive', '_blank');" type="button">
+        Are.na
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://docs.google.com/spreadsheets/d/1p85HCI8fqHOb-betPPwWoqkRWgNQITuAAV7XpAQtgl0/edit?usp=drive_link', '_blank');" type="button">
+        Attendance
+      </button>
+    </div>
+
+
+    <!-- Body: P1 ================================================================== -->
+    <div id="main" class="row1">
+      <div class="scrollContents">
+        
+        <div class="col2-text" style="text-indent: 0px;">
+          <!-- --------------------------------------------------------------- -->
+          <div id="p4_terra_1">
+            <iframe class="col-arena-L" src="schedule_w/weekly.html"></iframe>
+          </div>
+          <!-- --------------------------------------------------------------- -->
+          <div id="p4_terra_2">
+            <iframe class="col-arena-R" src="arena/class_note.html"></iframe>
+            <!-- <iframe class="col-arena-R" src="https://docs.google.com/document/d/1zrNCBbGVd7xPs4_IApp1fIEMM6ssqteynVVGvB38V5E/edit?usp=sharing"></iframe> -->
+            <!-- <iframe class="col-arena-R" src="schedule_m/monthly.html"></iframe> -->
+            <!-- <iframe class="col-arena-R" src="arena/class_resource.html"></iframe> -->
+          </div>
+          <!-- --------------------------------------------------------------- -->
+        </div>
+        
+        <div class="p-title">
+          
+          <div class="p-title-subM">
+            <div style="text-align: center;">
+              <button id="btn_p4_1" class="p-title-subM-btn" onclick="p4_terra_1()" type="button">
+                Note
+              </button>
+              |
+              <button id="btn_p4_2" class="p-title-subM-btn" onclick="p4_terra_2()" type="button">
+                Resources
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Body: Syllabus ================================================================== -->
+    <div class="row2">
+      <div class="scrollContents">
+        <div class="col2-full" style="text-indent: 0px;">
+          <div id="syllabus_1">
+            <div class="h-top"></div>
+        
+            <div class="col2">
+              <h3 style="text-indent: 0px;">
+                <div>
+                  <h3>
+                    BU Spring 2026
+                  </h3>
+                  <h3>
+                    Senior Graphic Design Studio
+                  </h3>
+                </div>
+              </h3>
+              <h3 style="text-indent: 0px;">
+                <div>
+                  <h3>
+                    CFA AR 484 | CREDIT 4
+                  </h3>
+                  <h3>
+                    Location: Room 405 (808 Commonwealth Ave)
+                  </h3>
+                </div>
+              </h3>
+            </div>
+
+            <br>
+
+            <div class="col2">
+              <h3 style="text-indent: 0px;">
+                <div>
+                  <h3 style="display: grid; grid-template-columns: 125px auto;">
+                    <ul>
+                      <li>
+                        Instructor
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <ul class="bulletS">
+                          <li class="link"><a href = "https://leehalim.com" target="_blank">Halim Lee (She/ Her)</a></li>
+                          <li class="link"><a href = "mailto: halim@bu.edu">halim@bu.edu</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </h3>
+                  <br>
+                  <h3 style="display: grid; grid-template-columns: 140px auto;">
+                    <ul>
+                      <li>
+                        Office Hours
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        Fri 5:30 — 7:30 pm
+                      </li>
+                    </ul>
+                  </h3>
+                </div>
+              </h3>
+
+              <h3 style="text-indent: 0px;">
+                <div>
+                  <h3 style="display: grid; grid-template-columns: 45px auto;">
+                    <ul>
+                      <li>
+                        A1 |
+                      </li>
+                      <li>
+                        B1 |
+                      </li>
+                      <br>
+                    </ul>
+                    <ul>
+                      <li>
+                        Tue, Thu 12:30 — 3:15 PM
+                      </li>
+                      <li>
+                        Tue, Thu 3:30 — 6:15 PM
+                      </li>
+                      <br>
+                    </ul>
+                  </h3>
+                  <h3 style="display: grid; grid-template-columns: 45px auto;">
+                    <ul>
+                      <li>
+                        TA |
+                      </li>
+                      <br>
+                    </ul>
+                    <ul>
+                      <li class="link">Anna (Annalise) Jacobson (She/ Her)</li>
+                      <li class="link"><a href = "mailto: ajacob01@bu.edu">ajacob01@bu.edu</a></li>
+                      <br>
+                    </ul>
+                  </h3>
+                </div>
+                <br>
+                <div>
+                </div>
+              </h3>
+            </div>
+            <br>
+
+            <div class="col2" style="text-indent: 0px;">
+              <div>
+                <h3>Description</h3>
+                <h4>
+                  In this culminating semester, students will independently develop systems and methodologies for solving real-world, pragmatic design problems. Students start by identifying an area of research and discussing its relationship to graphic design and contemporary discourse. The idea of 'designer as author' will be emphasized through a self-motivated design project that will strengthen individual processes, problem-solving capabilities, and design voice. In addition to a thesis project, students will document their design process in a thesis book and present a public exhibition. Upon graduation, students are expected to have developed a refined, intelligent, professional-grade body of work. This course fulfills the following BU Hub areas: Creativity/Innovation, Teamwork/Collaboration.
+                  <br><br>
+                  This course will help you to work through a process to define, clarify, and articulate what you hold important as a designer. Your thesis process leads to the development of a methodology that will extend beyond your education at BU. Consider your thesis as a timestamp to mark your unique voice and critical perspective at this moment. Treat this as an opportunity to test your ideas and even practice the work you hope to do in your future design practice. In other words, your thesis is not the end of it all. If anything, it’s the beginning of (hopefully) a life-long inquiry, an approach or a lens for which you examine the world around you.
+                  <br><br>
+                  Our goal is to set the conditions that foster and catalyze your independent research and work. Your work in this course will raise questions of form, content, and audience to challenge and define your perspective on graphic design.
+                </h4><br><br>
+
+                <h3>Learning Outcomes</h3>
+                <h4><ul class="bullet">
+                  <li>Form-making: Sophisticated making and use of form</li>
+                  <li>Interrelationship: Identify how concept and form relate to each other</li>
+                  <li>Authorship: Generate and develop methodologies to curate content</li>
+                  <li>Constraints: Develop, test, and apply your own set of rules to define solutions</li>
+                  <li>Vocabulary: Explore how to objectively discuss your own creative process and offer peer critique</li>
+                  <li>Designer’s voice: Critically consider what forms your point of view. Use readings, personal writing, and explore beyond the classroom</li>
+                </ul></h4><br>
+
+                <h3>Courseware</h3>
+                <h4>
+                  Please check our class website and Slack regularly. The class website will be used for sign-ups and uploading course materials, while Slack will be used for group communication. We will be using Are.na as the main tool for sharing insightful resources. 
+                </h4><br><br>
+
+                <h3>Project Submission</h3>
+                <h4>
+                  All projects should be uploaded to the class Google Drive by the date specified in the class schedule. Files uploaded after this date will be rejected for your semester grade. 
+                </h4><br><br>
+
+                <h3>Grading</h3>
+                <h4>
+                  You will receive one-semester grade (A—F) according to the following metric:
+                </h4><br>
+                <h4>
+                  <ul class="bulletG3">
+                    <li>Thesis Research :<br>develop a personal voice and refine ideas, clarity of topics and contents</li>
+                  </ul>
+                  <ul class="bulletG3">
+                    <li>Depth & Breadth :<br>in-depth research, exploration, curiosity, and experimentation</li>
+                  </ul>
+                  <ul class="bulletG3">
+                    <li>Group Collaboration :<br>project management, clarity in group communication, willingness to support group projects</li>
+                  </ul>
+                  <ul class="bulletG1">
+                    <li>Class Participation & Contribution :<br>actively participate and contribute in class</li>
+                  </ul>
+                </ul></h4><br>
+                <hr><br><br>
+
+                <!-- <h3>​​Course Policies</h3> -->
+                <h3>Disability Statement</h3>
+                <h4>
+                  Students who have self-identified, provided documentation of their disability, and requested reasonable accommodations may be entitled to receive approved modifications in the classroom, appropriate academic adjustments, or auxiliary aids that enable them to participate in and benefit from all educational programs and activities. Please see http://www.bu.edu/disability for more details.  
+                </h4><br><br>
+
+                <h3>Attendance & Absences</h3>
+                <h4>
+                  Please make every effort to arrive punctually. You must attend all the classes. According to the SVA Attendance Policy, unless specific permission for absence is arranged with the instructor of this course, students must attend class to receive credit for the course. Unexcused absences exceeding 1/4 of the total class hours in a given semester are considered excessive in all SVA courses. Tardiness and any unexcused absences will reduce your course grade. Three unexcused absences will reduce your semester grade by one step (e.g. A- to B+). Seven unexcused absences will earn you a failing grade for the course.  
+                </h4><br><br>
+
+                <h3>Wellness and Health</h3>
+                <h4>
+                  Your health and well-being are important for your journey as a professional graphic designer. It is important to work hard and balance that with rest, self-care, and attention to your mental and physical health. I will challenge you in this class through assignments, activities, and discussions. However, the work in this class should not be at the expense of your well-being. If for any reason you are struggling to find balance in your work life and health/wellbeing, please reach out. I am happy to discuss ways in which this class can support you in your learning and growth. You can find more resources provided by BU CFA Mental Health & Wellness Resources.
+                </h4><br><br>
+                <!-- <hr><br><br> -->
+
+              </div>
+
+              <!-- --------------------------------------------------------------- -->
+
+              <div>
+                <h3>➊ Methodology Map</h3>
+                <h4>
+                  The Methodology Map is divided into the Keywords Map and the Prompts Map. This is an exercise to collect and connect your thoughts and ideas about your thesis, and each should be designed as an 11×17 poster. 
+                </h4><br><br>
+                <hr><br><br>
+
+                <h3>➋ Thesis Project</h3>
+                <h4>
+                  The Thesis Project is a collection of works that represent your thesis. We will develop your Thesis Project starting from the Weekly Experiments. You are required to use at least two different media (for example, a book and a website, or a workshop and a typeface). Medium 1 and Medium 2 must be completed by March 24 and included in your Thesis Book. During the remaining time leading up to the Thesis Show, you can work on additional pieces for the exhibition, such as extra posters.
+                </h4><br><br>
+                <hr><br><br>
+
+                <h3>❸ Thesis Statement</h3>
+                <h4>
+                  The Thesis Statement is an original piece of writing that serves as a summary of your thesis project. It will be included in the SVA thesis catalog and must be within 250 words. Your thesis statement should be clear, concise, and accurately reflect your thesis.
+                </h4><br><br>
+                <hr><br><br>
+
+                <h3>➍ Interview</h3>
+                <h4>
+                  The Interview will be included as a chapter in your Thesis Book. You will contact the person you wish to interview, conduct the interview, and transcribe it into writing. It is recommended to reach out to someone working in a field related to your thesis. Consider how their expertise and this conversation can help you further your thesis ideas and research.
+                </h4><br><br>
+                <hr><br><br>
+
+                <h3>➎ Thesis Book</h3>
+                <h4>
+                  The thesis book is the final documentation of your thesis. It serves as a piece that ties together your thesis project, statement, research, writing, and process. You must submit two final copies of your thesis book by April 21, so if you plan to use a print shop, be sure to send your files by March 31 to allow time for printing and shipping.
+                </h4><br><br>
+                <hr><br><br>
+
+                <h3>➏ Thesis Show</h3>
+                <h4>
+                  Thesis Show is the final component of your thesis requirements. It will showcase your Thesis Project and Thesis Book, and you will prepare an installation plan for the exhibition. In addition, the class will be divided into four teams (Curatorial, 3D, 2D, and Media/Display Team) to handle the preparations for the Graphic Design Thesis Show.
+                </h4><br>
+                
+              </div>
+            </div>
+          </div>
+            
+          <div id="syllabus_2">
+            <iframe class="col-arena-R" src="schedule_m/monthly.html"></iframe>
+            <!-- <iframe id="noteText" class="col-arena-R" src="https://g-calendar-24f.glitch.me"></iframe> -->
+          </div>
+        </div>
+
+        <div class="p-title">
+          <div class="p-title-subM">
+            <div style="text-align: center;">
+              <button id="btn_s_1" class="p-title-subM-btn" onclick="s_1()" type="button">
+                Syllabus
+              </button>
+              |
+              <button id="btn_s_2" class="p-title-subM-btn" onclick="s_2()" type="button">
+                Schedule
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Body: Are.na ================================================================== -->
+    <iframe id="notePen" class="toolsWorld" src="/note/index.html"></iframe>
+
+
+    <!-- script ================================================================== -->
+    <script type="text/javascript" src="index.js"></script>
+
+
+  </body>
+</html>
