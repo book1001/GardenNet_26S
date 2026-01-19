@@ -50,17 +50,16 @@ function s_1() {
 function s_1_Tablet() {
   document.getElementById("syllabus_1").style.display = "block";
   document.getElementById("syllabus_2").style.display = "none";
-  document.getElementById("btn_s_1").style.color = "#ffffff";
-  document.getElementById("btn_s_2").style.color = "#000000";
+  document.getElementById("btn_s_1").style.borderBottom = "1.4px solid black";
+  document.getElementById("btn_s_2").style.borderBottom = "1.4px solid transparent";
 }
 
 function s_1_PC() {
   document.getElementById("syllabus_1").style.display = "block";
   document.getElementById("syllabus_2").style.display = "block";
-  document.getElementById("btn_s_1").style.color = "#ffffff";
-  document.getElementById("btn_s_2").style.color = "#000000";
+  document.getElementById("btn_s_1").style.borderBottom = "1.4px solid black";
+  document.getElementById("btn_s_2").style.borderBottom = "1.4px solid transparent";
 }
-
 
 
 // Responsive: Syllabus-2 ------------------------------------------------
@@ -77,15 +76,15 @@ function s_2() {
 function s_2_Tablet() {
   document.getElementById("syllabus_1").style.display = "none";
   document.getElementById("syllabus_2").style.display = "block";
-  document.getElementById("btn_s_1").style.color = "#000000";
-  document.getElementById("btn_s_2").style.color = "#ffffff";
+  document.getElementById("btn_s_1").style.borderBottom = "1.4px solid transparent";
+  document.getElementById("btn_s_2").style.borderBottom = "1.4px solid black";
 }
 
 function s_2_PC() {
   document.getElementById("syllabus_1").style.display = "block";
   document.getElementById("syllabus_2").style.display = "block";
-  document.getElementById("btn_s_1").style.color = "#000000";
-  document.getElementById("btn_s_2").style.color = "#ffffff";
+  document.getElementById("btn_s_1").style.borderBottom = "1.4px solid transparent";
+  document.getElementById("btn_s_2").style.borderBottom = "1.4px solid black";
 }
 
 
@@ -260,15 +259,15 @@ function p4_terra_1() {
 function p4_terra_1_Tablet() {
   document.getElementById("p4_terra_1").style.display = "block";
   document.getElementById("p4_terra_2").style.display = "none";
-  document.getElementById("btn_p4_1").style.color = "#ffffff";
-  document.getElementById("btn_p4_2").style.color = "#000000";
+  document.getElementById("btn_p4_1").style.borderBottom = "1.4px solid black";
+  document.getElementById("btn_p4_2").style.borderBottom = "1.4px solid transparent";
 }
 
 function p4_terra_1_PC() {
   document.getElementById("p4_terra_1").style.display = "block";
   document.getElementById("p4_terra_2").style.display = "block";
-  document.getElementById("btn_p4_1").style.color = "#ffffff";
-  document.getElementById("btn_p4_2").style.color = "#000000";
+  document.getElementById("btn_p4_1").style.borderBottom = "1.4px solid black";
+  document.getElementById("btn_p4_2").style.borderBottom = "1.4px solid transparent";
 }
 
 
@@ -286,15 +285,15 @@ function p4_terra_2() {
 function p4_terra_2_Tablet() {
   document.getElementById("p4_terra_1").style.display = "none";
   document.getElementById("p4_terra_2").style.display = "block";
-  document.getElementById("btn_p4_1").style.color = "#000000";
-  document.getElementById("btn_p4_2").style.color = "#ffffff";
+  document.getElementById("btn_p4_1").style.borderBottom = "1.4px solid transparent";
+  document.getElementById("btn_p4_2").style.borderBottom = "1.4px solid black";
 }
 
 function p4_terra_2_PC() {
   document.getElementById("p4_terra_1").style.display = "block";
   document.getElementById("p4_terra_2").style.display = "block";
-  document.getElementById("btn_p4_1").style.color = "#000000";
-  document.getElementById("btn_p4_2").style.color = "#ffffff";
+  document.getElementById("btn_p4_1").style.borderBottom = "1.4px solid transparent";
+  document.getElementById("btn_p4_2").style.borderBottom = "1.4px solid black";
 }
 
 
